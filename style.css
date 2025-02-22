@@ -1,0 +1,137 @@
+/* General body and font settings */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('bk.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Subtle overlay for contrast */
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Slightly more transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Header and Navigation styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); /* Gradient for readability */
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    color:#FFDD00;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: black;
+}
+h3 {
+    font-size: 2em;
+    color: #00BFFF;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dynamic Keyword section */
+.keyword-container {
+    margin-top: 20px;
+}
+
+.keyword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keyword img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.keyword span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Button styles */
+.linkedin-btn, .resume-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover, .resume-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-link {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link i {
+    margin-right: 8px;
+}
+
+.contact-link:hover {
+    color: #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.contact-section {
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+}

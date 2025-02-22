@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Kanse - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1> 
+        <h3>I’m Omkar Kanse – Specializing in AWS | Aspiring DevOps Engineer </h3>
+     
+        <div class="keyword-container">
+            <div class="keyword">
+                <img id="keyword-image" src="aws.png" alt="AWS Cloud">
+                <span id="keyword-text">AWS Cloud</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I am Omkar Kanse, an ENTC Engineer passionate about cloud computing and DevOps. I have hands-on experience with AWS services and constantly seek to improve cloud environments by optimizing systems and automating processes. I love challenges and look forward to continuous learning.</p>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p>Curious about my professional experience? Visit my LinkedIn profile:</p>
+        <a href="https://www.linkedin.com/in/omkar-kanse-56a5832b6" target="_blank" class="linkedin-btn">Visit LinkedIn Page</a>
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>Download my resume to know more about my professional journey:</p>
+        <a href="omkarcv5.pdf" class="resume-btn" download>Download Resume</a>
+    </section>
+
+ <section id="contact" class="container contact-section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <a href="https://www.linkedin.com/in/omkar-kanse-56a5832b6" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:omkarkanse2004@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+        <a href="tel:+917385381551" class="contact-link"><i class="fas fa-phone"></i> Mobile</a>
+        <a href="https://www.instagram.com/omkar_kanse_07/?__pwa=1#" target="_blank" class="contact-link"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Omkar Kanse. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const keywords = [
+                { text: "AWS Cloud", image: "aws.png" },
+                { text: "DevOps Automation", image: "devops.png" },
+                { text: "Linux Systems", image: "linux.png" },
+                { text: "Networking Fundamentals", image: "networking.png" },
+                { text: "GitHub Collaboration", image: "github.png" },
+                { text: "MySQL Database", image: "mysql.png" },
+                { text: "CI/CD Pipelines", image: "cicd.png" }
+            ];
+
+            let currentIndex = 0;
+            const keywordText = document.getElementById('keyword-text');
+            const keywordImage = document.getElementById('keyword-image');
+
+            function updateKeyword() {
+                const keyword = keywords[currentIndex];
+                keywordText.textContent = keyword.text;
+                keywordImage.src = `${keyword.image}`;
+                currentIndex = (currentIndex + 1) % keywords.length;
+            }
+
+            setInterval(updateKeyword, 2000); // Change every 3 seconds
+        });
+    </script>
+</body>
+</html>
